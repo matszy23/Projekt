@@ -1,0 +1,21 @@
+﻿<Page x:Class="biegi_rejestracja.Widoki.Stona_1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:biegi_rejestracja.Widoki"
+      mc:Ignorable="d" 
+      d:DesignHeight="403" d:DesignWidth="761"
+      Title="Stona_1">
+
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <TextBlock FontSize="20" TextAlignment="Center" Margin=" 0 0 10 0">Nadchodzące wydarzenia:</TextBlock>
+            <TextBlock  Height="180" Width="680" x:Name="wydarzenia" FontSize="20" TextAlignment="Center"></TextBlock>
+            <StackPanel Margin="0 40 0 0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Height="30" Width="105" x:Name="logowanie" Content="Zaloguj się" Click="logowanie_Click"></Button>
+                <Button Height="30" Width="105" Margin="30 0 0 0" x:Name="rejestracja" Content="Zarejestruj się" Click="rejestracja_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

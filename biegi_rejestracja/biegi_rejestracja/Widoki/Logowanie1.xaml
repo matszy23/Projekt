@@ -1,0 +1,34 @@
+﻿<Page x:Class="biegi_rejestracja.Widoki.Logowanie1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:biegi_rejestracja.Widoki"
+      mc:Ignorable="d" 
+      d:DesignHeight="403" d:DesignWidth="761"
+      Title="Logowanie1">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="230.5"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="230.5"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="76.5"></RowDefinition>
+            <RowDefinition Height="250"></RowDefinition>
+            <RowDefinition Height="76.5"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1" Margin="0 10 0 0">
+            <TextBlock HorizontalAlignment="Center" FontSize="15">Login:</TextBlock>
+            <TextBox x:Name="login" Width="auto" Margin="20 10 20 0"></TextBox>
+            <TextBlock HorizontalAlignment="Center" FontSize="15" Margin=" 0 10 0 0">Hasło:</TextBlock>
+            <PasswordBox x:Name="haslo" Width="auto" Margin="20 10 20 0"></PasswordBox>
+            <Button x:Name="logowanie" Height="30" Width="105" Margin="0 30 0 0" Content="Zaloguj się" Click="logowanie_Click"></Button>
+
+            <TextBlock HorizontalAlignment="Center" FontSize="11" Margin="0 15 0 0">Nie masz konta?</TextBlock>
+            <Button x:Name="rejestracja" Height="22" Width="90" Margin="0 7 0 0" Content="Zarejestruj się" Click="rejestracja_Click"></Button>
+        </StackPanel>
+        <Button Grid.Row="2" Grid.Column="2" Height="19" Width="60" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Margin=" 0 0 10 10" x:Name="powrót" Content="Powrót" Click="powrót_Click"></Button>
+    </Grid>
+</Page>

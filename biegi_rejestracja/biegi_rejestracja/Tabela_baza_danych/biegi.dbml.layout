@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="biegi">
+  <DataContextMoniker Name="/biegiDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ac724558-0cd9-483b-932e-d4ba17f0be2d" absoluteBounds="6.25, 2.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/biegiDataContext/Biegi" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f4724f3f-ccff-4da9-9d9f-5b3901f506de" absoluteBounds="6.265, 2.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b031a634-ff60-455b-bad4-0e0418824635" absoluteBounds="2.5, 2.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/biegiDataContext/Typy_biegów" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c3c60a4-169a-4254-ae0b-dca96fee2280" absoluteBounds="2.5149999999999997, 3.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.5 : 3.34699625651042); (6.25 : 3.34699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/biegiDataContext/Typy_biegów/Typy_biegów_Biegi" />
+      <nodes>
+        <classShapeMoniker Id="b031a634-ff60-455b-bad4-0e0418824635" />
+        <classShapeMoniker Id="ac724558-0cd9-483b-932e-d4ba17f0be2d" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

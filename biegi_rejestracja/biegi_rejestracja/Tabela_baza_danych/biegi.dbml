@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Bieg_rejestracja" Class="biegiDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-UF4NK14O\SQLEXPRESS;Initial Catalog=Bieg_rejestracja;Integrated Security=True" SettingsObjectName="biegi_rejestracja.Properties.Settings" SettingsPropertyName="Bieg_rejestracjaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Biegi" Member="Biegi">
+    <Type Name="Biegi">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nazwa" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Dystans" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Miasto" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Id_typ" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Data" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Oplata_start" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Typy_biegów_Biegi" Member="Typy_biegów" ThisKey="Id_typ" OtherKey="ID" Type="Typy_biegów" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Typy_biegów" Member="Typy_biegów">
+    <Type Name="Typy_biegów">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nazwa" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Typy_biegów_Biegi" Member="Biegi" ThisKey="ID" OtherKey="Id_typ" Type="Biegi" />
+    </Type>
+  </Table>
+</Database>

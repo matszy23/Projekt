@@ -1,0 +1,53 @@
+﻿<Window x:Class="biegi_rejestracja.Rejestracja"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:biegi_rejestracja"
+        mc:Ignorable="d"
+        Title="Rejestracja" Height="560" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="49*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="49*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1" Margin="0 10 0 0">
+            <TextBlock HorizontalAlignment="Center" FontSize="15">Imię:</TextBlock>
+            <TextBox x:Name="imie" Width="auto" Margin="20 10 20 0"></TextBox>
+            
+            <TextBlock HorizontalAlignment="Center" FontSize="15">Nazwisko:</TextBlock>
+            <TextBox x:Name="nazwisko" Width="auto" Margin="20 10 20 0"></TextBox>
+            
+            <TextBlock HorizontalAlignment="Center" FontSize="15">Login:</TextBlock>
+            <TextBox x:Name="login" Width="auto" Margin="20 10 20 0"></TextBox>
+            
+            <TextBlock HorizontalAlignment="Center" FontSize="15" Margin=" 0 10 0 0">Hasło:</TextBlock>
+            <PasswordBox x:Name="haslo" Width="auto" Margin="20 10 20 0"></PasswordBox>
+            
+            <TextBlock HorizontalAlignment="Center" FontSize="15" Margin=" 0 10 0 0">Powtórz hasło:</TextBlock>
+            <PasswordBox x:Name="haslo1" Width="auto" Margin="20 10 20 0"></PasswordBox>
+            
+            <TextBlock HorizontalAlignment="Center" FontSize="15" Margin=" 0 10 0 0" >E-mail:</TextBlock>
+            <TextBox x:Name="email" Width="auto" Margin="20 10 20 0"></TextBox>
+            
+            <TextBlock HorizontalAlignment="Center" FontSize="15" Margin=" 0 10 0 0">Data urodzenia:</TextBlock>
+            <DatePicker x:Name="data_ur" Margin="20 10 20 0" ></DatePicker>
+
+            <TextBlock HorizontalAlignment="Center" FontSize="15" Margin=" 0 10 0 0">Płeć:</TextBlock>
+            
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <RadioButton x:Name="K" GroupName="plec" FontSize="16" VerticalContentAlignment="Center">Kobieta</RadioButton>
+                <RadioButton x:Name="M" GroupName="plec" FontSize="16" VerticalContentAlignment="Center" Margin="10 0 0 0">Mężczyzna</RadioButton>
+            </StackPanel>
+
+            <Button x:Name="logowanie_msb" Height="30" Width="105" Margin="0 20 0 0" Content="Zarejestruj się" Click="logowanie_msb_Click"></Button>
+            
+        </StackPanel>
+    </Grid>
+</Window>
